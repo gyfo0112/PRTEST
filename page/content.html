@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/content.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 
@@ -32,19 +33,47 @@
         <div class="section">
             <section>
                 <h2>문의</h2>
-                <p>Email: team@example.com</p>
-                <p>010-XXXX-XXXX 또는</p>
-                <p>031-XXXX-XXXX</p>
+                <div class="slider-wrap">
+                    <div class="swiper callback-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide sl-1">
+                                <p>Email: team@example.com</p>
+                            </div>
+                            <div class="swiper-slide sl-2">
+                                <p>010-XXXX-XXXX</p>
+                            </div>
+                            <div class="swiper-slide sl-3">
+                                <p>031-XXXX-XXXX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </section>
 
             <section>
                 <h2>참고 링크</h2>
-                <ul>
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">Notion</a></li>
-                </ul>
+
+                <div class="slider-wrap">
+                    <div class="swiper link-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">GitHub</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">Notion</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </section>
+
         </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../js/conrent.js"></script>
 </body>
 
 </html>
